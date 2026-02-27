@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => {
       hmr: process.env.DISABLE_HMR !== 'true',
       proxy: {
         '/api': {
-          target: env.VITE_API_URL || 'https://motofix-backend-production.up.railway.app',
+          target: 'http://localhost:8080',
           changeOrigin: true,
         },
       },

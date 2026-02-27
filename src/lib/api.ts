@@ -1,5 +1,4 @@
-// Use dynamic URL for Railway or fallback to local proxy
-export const API_BASE = (import.meta as any).env?.VITE_API_URL || '/api';
+export const API_BASE = '/api';
 
 export const getAuthToken = () => localStorage.getItem('motofix_token');
 export const setAuthToken = (token: string) => localStorage.setItem('motofix_token', token);
